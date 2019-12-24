@@ -1,9 +1,15 @@
 // pages/about.js
-
-import Layout from '../components/MyLayout';
-
-export default function About() {
+const About = () => {
   return (
       <p>This is the about page</p>
   );
 }
+
+About.getInitialProps = async ctx => {
+  return {
+    namespacesRequired: ['common']
+  };
+};
+
+export default About;
+

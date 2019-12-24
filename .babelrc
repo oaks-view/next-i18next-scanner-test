@@ -1,0 +1,20 @@
+{
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+    ],
+    "env": {
+      "locales": {
+        "plugins": [
+          [
+            "i18next-extract",
+            {
+              "discardOldKeys": true,
+              "outputPath": "static/locales/en/scanResult.json"
+            }
+          ]
+        ]
+      }
+    }
+  }

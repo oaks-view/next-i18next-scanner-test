@@ -2,6 +2,7 @@
 import React from 'react';
 import App from 'next/app';
 import Layout from '../components/MyLayout';
+import { appWithTranslation, Router } from '@root/i18n';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -26,4 +27,5 @@ class MyApp extends App {
   }
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);
+// export default MyApp;

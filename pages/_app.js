@@ -18,12 +18,10 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, router } = this.props
-    // return <Component {...pageProps} />
     return <>
-    <Component {...pageProps} key={router.route} />
-    <Layout>
-      <p>Hello Next.js</p>
-    </Layout>
+      <Layout>
+        <Component {...pageProps} key={router.route} />
+      </Layout>
     </>
   }
 }

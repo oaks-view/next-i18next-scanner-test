@@ -5,7 +5,7 @@
     "plugins": [
     ],
     "env": {
-      "locales": {
+      "production": {
         "plugins": [
           [
             "i18next-extract",

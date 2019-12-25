@@ -18,6 +18,11 @@ const options = {
       return value;
     },
   },
+  localeSubpaths: {
+    fr: 'fr',
+    de: 'german',
+    en: 'eng',
+  }
 };
 
 const NextI18NextInstance = new NextI18Next(options);

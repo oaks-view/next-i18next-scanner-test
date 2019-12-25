@@ -8,11 +8,11 @@ const Index = () => {
     value: Number.parseInt(mark.value, 10),
   }));
 
-  const min = Number.parseInt(t('journey.step.years-living.min', { defaultValue: 2 }), 10);
+  const min = Number.parseInt(t('journey.step.years-living.min', { defaultValue: '2' }), 10);
 
   return (<>
     <h1>{t('home-h1')}</h1>
-    <h2>Marks: {...marks}</h2>
+    <h2>Marks: {marks}</h2>
   <h2>Min: {min}</h2>
   </>
   );
